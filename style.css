@@ -1,5 +1,75 @@
 * {
-margin : 0;
-padding: 0;
-box-sizing: border-box;
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #CD113B;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.ccccooolor {
+    color: #52006A;
+    color: #CD113B;
+    color: #FF7600;
+    color: #FFA900;
+} 
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: violet;
+    padding: 30px 0;
+    width: 100%;
+    background-color: #52006A;
+    color: #fff;
+}
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ul {
+    display: flex;
+    align-items: center;
+}
+li {
+    margin: 0 10px;
+}
+.fa-shopping-cart {
+    margin-left: 30px;
+    font-size: 30px;
+}
+
+
+
+.hero-section-products {
+    margin: 100px auto;
+    width: 1400px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.product {
+    border: 1px solid #FF7600;
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product img {
+    float: left;
+    width:  250px;
+    height: 250px;
+    object-fit: cover;
 }

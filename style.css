@@ -7,27 +7,19 @@
 }
 
 body {
-    background-color: #CD113B;
+    background-color: #FFEFEF;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
-.ccccooolor {
-    color: #52006A;
-    color: #CD113B;
-    color: #FF7600;
-    color: #FFA900;
-} 
 .container {
     width: 1400px;
     margin: 0 auto;
 }
 
 nav {
-    background-color: violet;
+    background-color: #7C99AC;
     padding: 30px 0;
     width: 100%;
-    background-color: #52006A;
     color: #fff;
 }
 nav .container {
@@ -58,13 +50,44 @@ li {
 }
 
 .product {
-    border: 1px solid #FF7600;
-    height: 300px;
+    border: 1px solid #7C99AC;
+    height: 400px;
     width: 300px;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #92A9BD;
+}
+.buttons-div {
+    margin: 10px 0;
+}
+.buttons-div button{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #7C99AC;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+.buttons-div button:hover {
+    background-color: #FFA900;
+}
+.content-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin: 10px 0;
+}
+.content-div p {
+    color: #ddd;
 }
 
 .product img {
@@ -72,4 +95,5 @@ li {
     width:  250px;
     height: 250px;
     object-fit: cover;
+    border-radius: 10px;
 }

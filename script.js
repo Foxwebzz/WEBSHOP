@@ -1,7 +1,3 @@
-
-let blockImg = document.querySelector('.block-img')
-
-
 // product
 let productsMain = document.querySelectorAll('.product')
 let shoeImgs = document.querySelectorAll('.shoe-img')
@@ -9,6 +5,7 @@ let shoeTitles = document.querySelectorAll('.shoe-title')
 let shoePrices = document.querySelectorAll('.shoe-price')
 
 // product view item
+let blockImg = document.querySelector('.block-img')
 let productImg = document.querySelector('.product-img')
 let productTitle = document.querySelector('.title-product')
 let productPrice = document.querySelector('.price-product')
@@ -16,8 +13,6 @@ let productPrice = document.querySelector('.price-product')
 // views
 let productViewSection = document.querySelector('.product-view-section')
 let heroSectionProducts = document.querySelector('.hero-section-products')
-
-
 
 // MORAS DA KREIRAS PA DA SELEKTUJES !!!!!!!!!!!!!!!!!!!!!!!!!!
 let text = ""
@@ -48,16 +43,13 @@ function createProducts() {
 }
 // MORAS DA KREIRAS PA DA SELEKTUJES !!!!!!!!!!!!!!!!!!!!!!!!!!
 
-
-
-
-
 // addEvent
 for (let i = 0; i < viewBtns.length; i++) {
     viewBtns[i].addEventListener('click', viewProduct)
 }
 
 let index = null
+
 function viewProduct() {
     index = this.getAttribute("data-index")
 

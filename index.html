@@ -13,57 +13,33 @@
     <nav>
         <div class="container">
             <h1>Web Shop</h1>
-            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-shopping-cart">
+                <div class="circle-num">1</div>
+            </i>
         </div>
     </nav>
 
     <div class="hero-section-products">
-        <div class="product">
-            <img src="./images/jordan-blackred.jpg" alt="">
-            <div class="content-div">
-                <h3>Shoe Name</h3>
-                <p>360.00$</p>
-            </div>
-            <div class="buttons-div">
-                <button class="view-btn">View</button>
-                <button class="buy-btn">Buy</button>
-            </div>
+        
+    </div>
+
+
+
+    <div class="product-view-section">
+        <div class="block-item block-img">
+            
         </div>
-        <div class="product">
-            <img src="./images/adidas-runners-modern.jpg" alt="">
-            <div class="content-div">
-                <h3>Shoe Name</h3>
-                <p>360.00$</p>
-            </div>
-            <div class="buttons-div">
-                <button class="view-btn">View</button>
-                <button class="buy-btn">Buy</button>
-            </div>
-        </div>
-        <div class="product">
-            <img src="./images/af-1blue-white.jpg" alt="">
-            <div class="content-div">
-                <h3>Shoe Name</h3>
-                <p>360.00$</p>
-            </div>
-            <div class="buttons-div">
-                <button class="view-btn">View</button>
-                <button class="buy-btn">Buy</button>
-            </div>
-        </div>
-        <div class="product">
-            <img src="./images/af1-nike-white.jpg" alt="">
-            <div class="content-div">
-                <h3>Shoe Name</h3>
-                <p>360.00$</p>
-            </div>
-            <div class="buttons-div">
-                <button class="view-btn">View</button>
-                <button class="buy-btn">Buy</button>
-            </div>
+        <div class="block-item">
+            <h3 class="title-product">Title</h3>
+            <input class="quantity-input" type="number" id="quantity" name="quantity" min="1" max="5" value=1>
+            <p class="price-product">$300</p>
+            <button class="buy-btn">Buy</button><br>
+            <button class="back-btn"> <a href="./index.html">Back to products</a> </button>
         </div>
     </div>
 
+
+    <script src="./data-products.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>

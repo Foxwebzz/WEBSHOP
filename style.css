@@ -163,7 +163,7 @@ li {
     color: #fff;
 }
 
-.buy-btn {
+.buy-btn, .buy-btn-2 {
     border: none;
     padding: 10px;
     border-radius: 10px;
@@ -186,4 +186,58 @@ li {
     font-size: 30px;
     text-transform: uppercase;
     color: #7C99AC;
+}
+
+
+
+/* cart window */
+
+.cart-window {
+    height: 100vh;
+    width: 300px;
+    background-color: rgba(255, 169, 0, 0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    display: none;
+}
+.content {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 2;
+    color: #fff;
+}
+
+.fa-times {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.active-toggle {
+    display: block;
+}
+
+/* cart product */
+.cart-margin {
+    margin-top: 50px ;
+}
+.cart-product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid black;
+    padding: 10px 0;
+    gap: 10px;
+}
+.cart-content-div {
+    width: 150px;
+}
+
+.cart-shoe-img {
+    float: left;
+    width:  100px;
+    height: 100px;
+    object-fit: cover; 
 }

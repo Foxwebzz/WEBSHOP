@@ -53,13 +53,44 @@ let index = null
 function viewProduct() {
     index = this.getAttribute("data-index")
 
-    blockImg.innerHTML = `<img class="product-img" src="${db[index].imgUrl}" alt=""></img> `
-    console.log(db[index].imgUrl);
-    console.log(productImg);
+    blockImg.innerHTML = `<img class="product-img" src="${db[index].imgUrl}" alt=""></img>`
     
     productTitle.innerHTML = `Model: ` + db[index].shoeTitle
     productPrice.innerHTML = `Price: ` + db[index].shoePrice + `$`
 
     productViewSection.style.display = "flex"
     heroSectionProducts.style.display = "none"
+}
+
+
+let productShow = ""
+// cart functionality
+let quantityInput = document.querySelector('.quantity-input')
+let qunatityValue = quantityInput.value
+let cartMargin = document.querySelector('.cart-margin')
+let buyBtn2 = document.querySelector('.buy-btn-2')
+
+
+buyBtn2.addEventListener('click', addToCart)
+
+for (let i = 0; i < buyBtns.length; i++) {
+    buyBtns[i].addEventListener('click', addToCart)
+}
+
+function addToCart() {
+    index = this.getAttribute("data-index")
+
+    productShow += `
+    <div class="cart-product">
+            <img class="cart-shoe-img" src="${db[index].imgUrl}" alt="">
+            <div class="cart-content-div">
+                <h3 class="cart-shoe-title">${db[index].shoeTitle}</h3>
+                <p class="cart-shoe-price">${db[index].shoePrice}$</p>
+                <h4 class="cart-shoe-quantity">Quantity: ${qunatityValue}</h4>
+            </div>
+    </div>
+
+    `   
+    cartMargin.innerHTML = productShow
+    
 }

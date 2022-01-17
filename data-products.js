@@ -1,8 +1,19 @@
 let db = [
     {
-        imgUrl : "./images/jordan-blackred.jpg",
-        shoeTitle : "Jordan",
-        shoePrice : 200
+        imgUrl : "./shoes/Pegasus/pegasus-trail-3-gore-tex-mens-waterproof-trail-running-shoes-HG005k (1).png",
+        shoeTitle : "Pegasus",
+        shoePrice : 200,
+        imgArray : [
+            "./shoes/Pegasus/pegasus-trail-3-gore-tex-mens-waterproof-trail-running-shoes-HG005k (2).png",
+            "./shoes/Pegasus/pegasus-trail-3-gore-tex-mens-waterproof-trail-running-shoes-HG005k (3).png",
+            "./shoes/Pegasus/pegasus-trail-3-gore-tex-mens-waterproof-trail-running-shoes-HG005k (4).png",
+            "./shoes/Pegasus/pegasus-trail-3-gore-tex-mens-waterproof-trail-running-shoes-HG005k (5).png",
+            "./shoes/Pegasus/pegasus-trail-3-gore-tex-mens-waterproof-trail-running-shoes-HG005k (1).png",
+            "./shoes/Pegasus/pegasus-trail-3-gore-tex-mens-waterproof-trail-running-shoes-HG005k (6).png",
+            "./shoes/Pegasus/pegasus-trail-3-gore-tex-mens-waterproof-trail-running-shoes-HG005k (7).png",
+            "./shoes/Pegasus/pegasus-trail-3-gore-tex-mens-waterproof-trail-running-shoes-HG005k (8).jpg",
+            "./shoes/Pegasus/pegasus-trail-3-gore-tex-mens-waterproof-trail-running-shoes-HG005k (9).png",
+        ]
     },
     {
         imgUrl : "./images/adidas-runners-modern.jpg",

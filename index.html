@@ -1,55 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <div class="container">
-            <h1>Web Shop</h1>
-            <i class="fas fa-shopping-cart cart-btn">
-                <div class="circle-num">1</div>
-            </i>
-        </div>
+      <div class="container">
+        <h1>Web Shop</h1>
+        <i class="fas fa-shopping-cart cart-btn">
+          <div class="items-num">0</div>
+        </i>
+      </div>
     </nav>
 
     <div class="hero-section-products"></div>
 
-    <div class="product-view-section">
-        <div class="block-item block-img"></div>
-        <div class="block-item">
-            <h3 class="title-product">Title</h3>
-            <input class="quantity-input" type="number" id="quantity" name="quantity" min="1" max="5" value=1>
-            <p class="price-product">$300</p>
-            <button class="buy-btn-2">Buy</button><br>
-            <button class="back-btn"> <a href="./index.html">Back to products</a> </button>
-        </div>
-    </div>
-
+    <div class="product-view-section"></div>
 
     <div class="cart-window">
-        <div class="content">
-            <i class="fas fa-times close-btn"></i>
-        </div>
-        <div class="cart-margin">
-            <!-- <div class="cart-product">
-                <img class="cart-shoe-img" src="./images/adidas-clasic.jpg" alt="">
-                <div class="cart-content-div">
-                    <h3 class="cart-shoe-title">Title</h3>
-                    <p class="cart-shoe-price">500$</p>
-                    <h4 class="cart-shoe-quantity">Quantity: 5</h4>
-                </div> 
-            </div>  -->
-        </div>
+      <div class="content">
+        <i class="fas fa-times close-btn"></i>
+      </div>
+      <div class="cart-margin"></div>
     </div>
 
     <script src="./cart-toggle.js"></script>
     <script src="./data-products.js"></script>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
